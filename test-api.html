@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Testing API</h1>
+    <button onclick="testAPI()">Test Upload URL</button>
+    <pre id="result"></pre>
+    
+    <script>
+        async function testAPI() {
+            const result = document.getElementById('result');
+            try {
+                result.textContent = 'Testing...';
+                const response = await fetch('https://hw9kfk8jff.execute-api.us-east-1.amazonaws.com/upload-url?filename=test.mp4');
+                const data = await response.json();
+                result.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                result.textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
