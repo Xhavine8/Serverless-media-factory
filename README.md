@@ -170,4 +170,5 @@ MIT
 
 ## Author
 
-Built by [Xhavine8](https://github.com/Xhavine8) using AWS serverless technologies
+[Andrew Leshan]
+leshanandrew76@gmail.com
