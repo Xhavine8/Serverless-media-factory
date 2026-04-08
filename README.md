@@ -163,6 +163,9 @@ aws s3 rm s3://media-factory-output-prod --recursive
 ### CloudFront 403 errors
 - Verify OAI permissions on output bucket
 - Check bucket policy allows CloudFront access
+  
+## Architecture
+![Serverless Media Factory Architecture](./serverless-media-factory-architecture.svg)
 
 ## License
 
